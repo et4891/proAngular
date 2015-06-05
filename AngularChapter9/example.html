@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--Applying the ng-app attribute-->
+<html ng-app="exampleApp" >
+<head>
+    <title>AngularJS Demo</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+        // Creating a module named exampleApp
+        var myApp = angular.module("exampleApp", []);
+
+        // Define value for service (can be used for filter too)
+        // Create a variable called now and assigned new Date to it
+        // Using the Module.value method to create a value service which is called nowValue
+        // Then this can be declared a dependency on the nowValue service when days service is created
+        var now = new Date();
+        myApp.value("nowValue", now);
+
+        // Creating a controller named dayCtrl
+        // AngularJS provides some built-in services and features that are specified using argument names that start with the $ symbol
+        // Below, $scope is specified which asks AngularJS to provide the scope for the controller.
+        // This is an example of dependency injection (DI), where AngularJS inspects the arguments that are specified for a function and locates the components they correspond to.
+        myApp.controller("dayCtrl", function ($scope) {
+            $scope.day = new Date().getDay();
+        });
+
+        // Create a day controller which uses service
+        myApp.controller("useServiceDayCtrl", function($scope, days){
+           $scope.day = days.today;
+        });
+
+        // Creating another controller for tomorrow. Separating them might not seem to be needed in such small app but this will help a lot with organzing when app is getting bigger and bigger
+        myApp.controller("tomorrowCtrl", function($scope){
+            $scope.day = new Date().getDay() + 1;
+        });
+
+        // Create a tomorrow controller that uses service
+        myApp.controller("useServiceTomorrowCtrl", function($scope, days){
+           $scope.day = days.tomorrow;
+        });
+
+        // Create service named days
+        // Service method takes two arguments: the name of the service and a factory function that is called to create the service object
+        // The new object is accessible via the this keyword and I use this object to define today and tomorrow properties.
+        // Now we can access today and tomorrow values anywhere in the AngularCode
+        // After value is defined, we use the name of the value service as argument to use
+        myApp.service("days", function(nowValue){
+            this.today = nowValue.getDay();
+            this.tomorrow = this.today + 1;
+        });
+
+        // A directive highlight is created and the second argument are often factory functions, so called because they are responsible for creating the object that AngularJS will employ to perform the work itself.
+        // The return statement in the factory function returns another function (worker function), which Angular JS will invoke each time it needs to apply the directive
+        // Making a directive, if the day = the highlight attribute, the css would apply
+        // e.g.
+        // if scope.day is Tuesday and html attribute and value is highlight="Tuesday" then the css would apply
+        // if scope.day is Wednesday then the css will not apply
+        // Three arguments are passed into the worker function scope, element, attrs
+        // The scope argument lets me inspect the data that is available in the view; in this case, it allows me to get the value of the day property in dayCtrl.
+        // The attrs argument provides me with a complete set of the attributes that have been applied to the element, including the attribute that applies the directive: I use this to get the value of the highlight attribute.
+        // If the value of the highlight attribute and the day value from the scope match, then I use the element argument to configure the HTML content.
+        // The element argument is a jqLite object, which is the cut-down version of jQuery
+        // $filter argument is added to the factory function because this tells AngularJS that I want to receive the filter service object when my function is called
+        myApp.directive("highlight", function($filter){
+            var dayFilter = $filter("dayName");
+            return function (scope, element, attrs){
+                if (dayFilter(scope.day) == attrs["highlight"]){
+                    element.css("color", "red");
+                }
+            }
+        });
+
+        // Creating a filter
+        myApp.filter("dayName", function () {
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday"];
+            return function (input) {
+                return angular.isNumber(input) ? dayNames[input] : input;
+            };
+        });
+    </script>
+</head>
+<body>
+<!--Applying ng-controller attribute-->
+<div class="panel">
+    <div class="page-header">
+        <h3>AngularJS App</h3>
+    </div>
+    <h4 ng-controller="dayCtrl" highlight="Wednesday">
+        <!--Applying filter by using | and the name of filter at the end-->
+        Today is {{day || "(unknown)" | dayName}}
+    </h4>
+    <h4 ng-controller="tomorrowCtrl">
+        Tomorrow is {{day || "(unknown)" | dayName}}
+    </h4>
+    <h4 ng-controller="useServiceDayCtrl">
+        Today is {{day || "(unknown)" | dayName}}
+    </h4>
+    <h4 ng-controller="useServiceTomorrowCtrl">
+        Tomorrow is {{day || "(unknown)" | dayName}}
+    </h4>
+</div>
+</body>
+</html>

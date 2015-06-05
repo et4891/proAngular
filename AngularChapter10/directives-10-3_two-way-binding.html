@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+                .controller("defaultCtrl", function ($scope) {
+                    $scope.todos = [
+                        { action: "Get groceries", complete: false },
+                        { action: "Call plumber", complete: false },
+                        { action: "Buy running shoes", complete: true },
+                        { action: "Buy flowers", complete: false },
+                        { action: "Call family", complete: false }];
+                });
+    </script>
+</head>
+<body>
+<div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+    <h3 class="panel-header">To Do List</h3>
+    <div class="well">
+        <!-- This is just one way inline binding to show the action property applied-->
+        <div>The first item is: {{todos[0].action}}</div>
+    </div>
+    
+    <div class="form-group well">
+        <label for="firstItem">Set First Item:</label>
+        <!--
+        This binding is applied via the input element and is a two way binding.
+        Two way bindings can be applied only to elements that allow the user to provide a data value such as input, textarea and select elements.
+        the ng-model directive sets the content of the element it is applied to then responds to changes that the user makes by updating the data model
+        -->
+        <input name="firstItem" class="form-control" ng-model="todos[0].action"/>
+    </div>
+</div>
+</body>
+</html>

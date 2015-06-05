@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+The attribute of ng-app is the most important AngularJS addition to HTML
+This specifies that the html element in the listing contains a module that should be compiled and processed by AngularJS
+data-ng-app is also available if the development tool chain can't process nonstandard HTML elements and attributes
+Here we are using the todoApp module created in the script
+Without this, the app will not work.  You can try by removing the value in the ng-app
+-->
+<html ng-app="todoApp">
+<head>
+    <title>TO DO List</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script src="angular.js"></script>
+    <script>
+        // Data model
+        // A javascript object called model with properties
+        // The user property defines the name of the user
+        // The items property defines an array of objects that describe my to-do items
+        var model = {
+            user: "Adam"
+//            items: [{action: "Buy Flowers", done: false},
+//                {action: "Get Shoes", done: false},
+//                {action: "Collect Tickets", done: true},
+//                {action: "Call Joe", done: false}]
+        };
+
+        // AngularJS apps are formed from one or more modules.
+        // Modules are created by calling the angular.module method as follows
+        // The arguments to the angular.module method are the name of the module to create and an array of other modules that are going to be needed
+        // A module called todoApp is created below
+        // An empty array for the second argument is to tell AngularJS that I need no other modules
+        var todoApp = angular.module("todoApp",[]);
+
+        // The run method takes a function that is executed once AngularJS has performed its initial setup and is used for one-off tasks
+        // $http argument is specified for the function passed to the run method, which tells AngularJS I want to use the service object that provides support for making Ajax calls
+        // Using arguments to tell AngularJS what features you require is part of an approach known as dependency injection
+        todoApp.run(function ($http){
+           $http.get("todo.json").success(function(data){
+               model.items = data;
+           });
+        });
+
+        // A customer filter
+        todoApp.filter("checkedItems", function(){
+           return function (items, showComplete){
+               var resultArr = [];
+               angular.forEach(items, function(item){
+                  if(item.done == false || showComplete == true){
+                      resultArr.push(item);
+                  }
+               });
+               return resultArr;
+           }
+        });
+
+        // Controllers are created by calling the controller method on the Module object returned by angular.module
+        // The arguments to the controller method are the name of the new controller and a function that will be invoked to defind the controller functionality
+        // ToDoCtrl is the name of the controller
+        // The argument to my controller function is called $scope
+        // Variable names that start with $ represent built-in features that AngularJS provides
+        // When you see the $ sign, it usually refers to a built-in service, with is a self contained component that provides features to multiple controllers, but $scope is special and is used to expose data and functionality to views.
+        todoApp.controller("ToDoCtrl", function($scope){
+            // Here we created a property called todo on $scope service object and assigned the complete model
+            // With this property we can access the model object and it's property by using todo.user, todo.items
+            $scope.todo = model;
+
+            // A function to loop through the items and check if item.done is false then count increases
+            // angular.forEach method is used here for the loop
+            $scope.incompleteCount = function(){
+                var count = 0;
+                angular.forEach($scope.todo.items, function(item){
+                    if(!item.done){count++}
+                });
+                return count;
+            };
+
+            // This new behavior will return either label-success or label-warning depend on the incompleteCount()
+            // This can then be used for ng-class directive in order to change class name depending on incompleteCount()
+            $scope.warningLevel = function(){
+                return ($scope.incompleteCount() < 3) ? "label-success" : "label-warning";
+            };
+
+            // This new behavior makes the text of a new to-do item and adds an object to the data model,
+            // using the text as the value of the action property and setting the done property to false
+            $scope.addNewItem = function(actionText){
+                $scope.todo.items.push({ action: actionText, done: false });
+            };
+        });
+    </script>
+</head>
+<!--
+With this simple app and with only one controller, the ng-controller attribute is assigned to the body element
+The value of ng-controller is ToDoCtrl which is the controller name created with the todo property
+-->
+<body ng-controller="ToDoCtrl">
+    <div class="page-header">
+        <!--
+        Views are generated by combining data the controller provides with annotated HTML elements that produce content for the browser to display
+        The data produced here for the views are inside the {{}} which is also called data binding or model binding
+        This is a one-way model bindings where values are taken from the model and used to populate the elements in a template
+        -->
+        <h1>
+            {{todo.user}}'s To Do List
+            <!--
+            We can use the model's property and length method to check the total length of the list todo.items.length
+            After the incompleteCount function is created we can use the ng-hide directive to hide the label if everything is completed
+            Using the ng-class directive to insert class of label-success or label-warning depending on the count of incompleteCount(), this will change the css of the label
+            -->
+            <span class="label label-default" ng-class="warningLevel()" ng-hide="incompleteCount() == 0">
+                {{incompleteCount()}}
+            </span>
+        </h1>
+    </div>
+    <div class="panel">
+        <div class="input-group">
+            <!--
+            A name of a property is specified here for the directive to update that is not part of the model.
+            The ng-model="actionText" will dynamically create the property for us within the scope of the controller
+            The value of the ng-model has to match with the ng-click="addNewItem(parameter)", this will also update the view at client side
+            -->
+            <input class="form-control" ng-model="actionText"/>
+            <span class="input-group-btn">
+                <!--
+                ng-click directive sets up a handler that if click event is triggered the addNewItem behavior will be invoked
+                -->
+                <button class="btn btn-default" ng-click="addNewItem(actionText)">Add</button>
+            </span>
+        </div> <!--end input-group div-->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+                ng-repeat attribute applies a directive that tells AngularJS to generate the element it is applied to and its contents for each object in a collection
+                value of the ng-repeat attribute is in the format <name> in <collection> which is specified below with item in todo.items
+                Filter, filters all done that's false - a default example: filter:{done: false}
+                Order, orderBy the actions alphabetically
+                -->
+                <tr ng-repeat="item in todo.items | checkedItems:showComplete | orderBy:'action'">
+                    <td>{{item.action}}</td>
+                    <!--
+                    Angular provides two-way model binding, where model is used to generate elements and changes in the element cause corresponding changes in the model
+                    ng-model attribute is telling AngularJS to create a two-way binding between the value of the input element and the done property
+                    With the checkbox input type, if checkbox is checked the value will be true and be false if unchecked
+                    This only changes on the client side not the server side so do not worry to play around in the browser.
+                    -->
+                    <td><input type="checkbox" ng-model="item.done"/></td>
+                    <!--uncomment the following code will show true and false to see if item is done or not-->
+                    <!--<td>{{item.done}}</td>-->
+                </tr>
+            </tbody>
+        </table>
+        <div class="checkbox-inline">
+            <label><input type="checkbox" ng_model="showComplete"/>Show Complete</label>
+        </div>
+    </div><!-- end panel div -->
+</body>
+</html>

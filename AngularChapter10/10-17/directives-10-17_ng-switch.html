@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="../angular.js"></script>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="striped-table.css"/>
+    <script>
+        angular.module("exampleApp", [])
+                .controller("defaultCtrl", function ($scope) {
+                    // data object must be created in order to create own mode property in ng-model
+                    $scope.data = {};
+
+                    $scope.todos = [
+                        { action: "Get groceries", complete: false },
+                        { action: "Call plumber", complete: false },
+                        { action: "Buy running shoes", complete: true },
+                        { action: "Buy flowers", complete: false },
+                        { action: "Call family", complete: false }];
+                });
+    </script>
+</head>
+<body>
+<div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+    <h3 class="panel-header">To Do List</h3>
+    <div class="well">
+        <!-- using ng-repeat to generate a set of radio buttons that use two way data binding to set the value of a model property called data.mode-->
+        <div class="radio" ng-repeat="button in ['None', 'Table', 'List']">
+            <label>
+                <input type="radio" ng-model="data.mode" value="{{button}}" ng-checked="$first"/>
+                {{button}}
+            </label>
+        </div>
+    </div>
+
+    <!-- ng-switch is applied when an on attribute that specifies the expression that will be evaluated to decide which region of content will be displayed-->
+    <div ng-switch on="data.mode">
+        <!-- Use the ng-switch-when to denote which region of content will be associated with a specific value-->
+        <div ng-switch-when="Table">
+            <table class="table">
+                <thead>
+                    <tr><th>#</th><th>Action</th><th>Done</th></tr>
+                </thead>
+                <tr ng-repeat="item in todos" ng-class="$odd ? 'odd' : 'even'">
+                    <td>{{index + 1}}</td>
+                    <td ng-repeat="prop in item">{{prop}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div ng-switch-when="List">
+            <ol>
+                <li ng-repeat="item in todos">
+                    {{item.action}}<span ng-if="item.complete"> (Done)</span>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Sets the default for the value-->
+        <div ng-switch-default>
+            Select another option to display a layout
+        </div>
+    </div>
+</div>
+</body>
+</html>
