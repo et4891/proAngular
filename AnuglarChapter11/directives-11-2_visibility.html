@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Directives</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="bootstrap-theme.css" rel="stylesheet" />
+    <script>
+        angular.module("exampleApp", [])
+                .controller("defaultCtrl", function ($scope) {
+                    $scope.todos = [
+                        { action: "Get groceries", complete: false },
+                        { action: "Call plumber", complete: false },
+                        { action: "Buy running shoes", complete: true },
+                        { action: "Buy flowers", complete: false },
+                        { action: "Call family", complete: false }];
+                });
+    </script>
+    <style>
+        td > *:first-child {font-weight: bold;}
+    </style>
+</head>
+<body>
+<div id="todoPanel" class="panel" ng-controller="defaultCtrl">
+    <h3 class="panel-header">To Do List</h3>
+
+    <div class="checkbox well">
+        <label>
+            <input type="checkbox" ng-model="todos[2].complete" />
+            Item 3 is complete
+        </label>
+    </div>
+
+    <table class="table">
+        <thead>
+        <tr><th>#</th><th>Action</th><th>Done</th></tr>
+        </thead>
+        <tr ng-repeat="item in todos" ng-if="item.comlete">
+            <td>{{$index + 1}}</td>
+            <td>{{item.action}}</td>
+            <td>
+                <!--If the checkbox is checked, the ng-show value will be true and (Done) will be shown on screen
+                    If the checkbox is unchecked, the ng-hide value will be false BUT ng-hide evaluate this situation as true so actually (Incomplete) will be printed.-->
+                <!--ng-hide only hides the elements in the DOM which means the CSS only apply to ng-hide and not ng-show-->
+                <span ng-hide="item.complete"> (Incomplete)</span>
+                <span ng-show="item.complete"> (Done)</span>
+            </td>
+            <td>
+                <!--ng-if removes the elements from DOM so by using ng-if, the CSS works with both-->
+                <span ng-if="!item.complete"> (Incomplete)</span>
+                <span ng-if="item.complete"> (Done)</span>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
