@@ -24,6 +24,8 @@
         <h3 class="panel-header">To Do List</h3>
         <div>{{todos[0].action}}</div>
         <input type="text" class="form-control" ng-model="todos[0].action"/>
+        <div ng-bind-template="{{todos[1].action}}  {{todos[2].action}}"></div>
     </div>
+
 </body>
 </html>
