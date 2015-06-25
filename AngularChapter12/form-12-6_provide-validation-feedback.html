@@ -10,25 +10,32 @@
                 .controller("defaultCtrl", function ($scope) {
                     $scope.addUser = function (userDetails) {
                         $scope.message = userDetails.name
-                        + " (" + userDetails.email + ") (" + userDetails.agreed + ")->" + userDetails.url;
+                        + " (" + userDetails.email + ") (" + userDetails.agreed + ")";
                     };
                     $scope.message = "Ready";
                 });
     </script>
-
+    <style>
+        /* ng-invalid, ng-valid, ng-dirty classes are automatically created in the inputs */
+        form .ng-invalid.ng-dirty { background-color: lightpink; }
+        form .ng-valid.ng-dirty { background-color: lightgreen; }
+        span.summary.ng-invalid { color: red; font-weight: bold; }
+        span.summary.ng-valid { color: green; font-weight: bold;}
+    </style>
 </head>
 <body>
 <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
-    <!--This form shows if all three inputs and an OK button that is disabled which cannot be clicked until all inputs are valid-->
-    <!--In order to use AngularJS validation make sure to have form element with name attribute and novalidate attribute-->
-    <!--The name attribute will define some useful variables that report on the validity of the form data and accesses these values via the name property-->
-    <!--The novalidate attribute will disable the browsers validation support (which is really inconsistent) and enable the AngularJS validation features properly-->
     <form name="myForm" novalidate ng-submit="addUser(newUser)">
         <div class="well">
             <div class="form-group">
                 <label>Name:</label>
                 <input name="userName" type="text" class="form-control"
                        required ng-model="newUser.name">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input name="userEmail" type="email" class="form-control"
+                       required ng-model="newUser.email">
             </div>
             <div class="checkbox">
                 <label>
@@ -43,7 +50,14 @@
             </button>
         </div>
         <div class="well">
-            Valid: {{myForm.$valid}}
+            Message: {{message}}
+            <div>
+                Valid:
+                <span class="summary"
+                    ng-class="myForm.$valid ? 'ng-valid' : 'ng-invalid'">
+                    {{myForm.$valid}}
+                </span>
+            </div>
         </div>
     </form>
 </div>

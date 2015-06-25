@@ -10,12 +10,11 @@
                 .controller("defaultCtrl", function ($scope) {
                     $scope.addUser = function (userDetails) {
                         $scope.message = userDetails.name
-                        + " (" + userDetails.email + ") (" + userDetails.agreed + ")->" + userDetails.url;
+                        + " (" + userDetails.email + ") (" + userDetails.agreed + ")";
                     };
                     $scope.message = "Ready";
                 });
     </script>
-
 </head>
 <body>
 <div id="todoPanel" class="panel" ng-controller="defaultCtrl">
@@ -30,6 +29,11 @@
                 <input name="userName" type="text" class="form-control"
                        required ng-model="newUser.name">
             </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input name="userEmail" type="email" class="form-control"
+                       required ng-model="newUser.email">
+            </div>
             <div class="checkbox">
                 <label>
                     <input name="agreed" type="checkbox"
@@ -37,13 +41,22 @@
                     I agree to the terms and conditions
                 </label>
             </div>
+            <!--$invalid returns true if the form is not valid which actives the ng-disable directive NOT to let others press OK when form is not valid-->
+            <!--This is also where the name attribute for the form comes in handy-->
+            <!--The value of the form name attribute act like an object and calls the validation variables like an object calling its properties-->
             <button type="submit" class="btn btn-primary btn-block"
                     ng-disabled="myForm.$invalid">
                 OK
             </button>
         </div>
         <div class="well">
-            Valid: {{myForm.$valid}}
+            Message: {{message}}
+            <div>
+                <!--The $valid variable represent the overall validity of the form element.-->
+                <!--If all inputs are validated then the following will return true-->
+                <!--In this case, name, proper email and the checkbox checked all three are required in order for $valid to return true-->
+                Valid: {{myForm.$valid}}
+            </div>
         </div>
     </form>
 </div>

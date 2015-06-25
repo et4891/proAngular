@@ -24,7 +24,18 @@
     <favorites_list name="ProAngular" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="form-12-10_defering-validation-feedback.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-10_defering-validation-feedback.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5991317" vertical-offset="0" max-vertical-offset="1206">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -38,13 +49,20 @@
         <option value="$PROJECT_DIR$/AnuglarChapter11/directives-11-8_handle_events.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/directives-11-9_custom_directive.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/directives-11-10_boolean_attributes.html" />
-        <option value="$PROJECT_DIR$/AngularChapter12/form-12-1_initial.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/quiz#6.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/quiz-6.html" />
-        <option value="$PROJECT_DIR$/self/directive.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/directives-11-6_classes_cs11s.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/quiz-7.html" />
         <option value="$PROJECT_DIR$/AnuglarChapter11/1.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-1_initial.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-3_implicitly_create_model_properties.html" />
+        <option value="$PROJECT_DIR$/self/directive.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-5_basic-form-validation.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-6_provide-validation-feedback.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-7_feedback-with-specific-constraints.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-9_consolidating-validation-feedback.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-10_deffering-validation-feedback.html" />
       </list>
     </option>
   </component>
@@ -56,6 +74,22 @@
     <option name="x" value="825" />
     <option name="width" value="1095" />
     <option name="height" value="1040" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PHP</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -80,12 +114,27 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="ProAngular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProAngular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProAngular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="self" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -114,51 +163,51 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistoryKey" value="directives-10&#9;FILE&#9;file://D:/PhpstormProjects/ProAngular/AngularChapter10/10-17/directives-10-17_ng-switch.html" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PhpstormProjects\ProAngular\AnuglarChapter11" />
       <recent name="D:\PhpstormProjects\ProAngular\AngularChapter12" />
+      <recent name="D:\PhpstormProjects\ProAngular\AnuglarChapter11" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PhpstormProjects\ProAngular\AnuglarChapter11" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.1.html">
-    <configuration default="false" name="directive.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/self/directive.html">
+  <component name="RunManager" selected="JavaScript Debug.form-12-9_consolidating-validation-feedback.html">
+    <configuration default="false" name="form-12-6_provide-validation-feedback.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-6_provide-validation-feedback.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="directives-11-6_classes_css.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AnuglarChapter11/directives-11-6_classes_css.html">
+    <configuration default="false" name="form-12-7_feedback-with-specific-constraints.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-7_feedback-with-specific-constraints.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="quiz-7.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AnuglarChapter11/quiz-7.html">
+    <configuration default="false" name="form-12-8_validation-variables-control-element-visibility.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="directives-11-6_classes_cs11s.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AnuglarChapter11/directives-11-6_classes_cs11s.html">
+    <configuration default="false" name="form-12-9_consolidating-validation-feedback.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-9_consolidating-validation-feedback.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AnuglarChapter11/1.html">
+    <configuration default="false" name="form-12-10_defering-validation-feedback.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-10_defering-validation-feedback.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -177,9 +226,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -189,20 +235,23 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.directive.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.directives-11-6_classes_css.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.quiz-7.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.directives-11-6_classes_cs11s.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.1.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form-12-6_provide-validation-feedback.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form-12-7_feedback-with-specific-constraints.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.form-12-8_validation-variables-control-element-visibility.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form-12-9_consolidating-validation-feedback.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form-12-10_defering-validation-feedback.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.1.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.quiz-7.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.directives-11-6_classes_cs11s.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.directives-11-6_classes_css.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.directive.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form-12-9_consolidating-validation-feedback.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form-12-10_defering-validation-feedback.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.form-12-8_validation-variables-control-element-visibility.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form-12-7_feedback-with-specific-constraints.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form-12-6_provide-validation-feedback.html" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +270,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="825" y="0" width="1095" height="1040" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -229,19 +278,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22891566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22891566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18562232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18562232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -268,6 +317,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/self/directive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
@@ -373,20 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-1_initial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/self/directive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74147725" vertical-offset="0" max-vertical-offset="704">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AnuglarChapter11/directives-11-6_classes_css.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.148149" vertical-offset="365" max-vertical-offset="1314">
@@ -405,6 +448,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72159094" vertical-offset="230" max-vertical-offset="1170">
           <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-1_initial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.740741" vertical-offset="160" max-vertical-offset="864">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnguarChapter2/todo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34587553" vertical-offset="1291" max-vertical-offset="3024">
+          <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-3_implicitly_create_model_properties.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75542694" vertical-offset="0" max-vertical-offset="1494">
+          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-5_basic-form-validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5079595" vertical-offset="9" max-vertical-offset="1242">
+          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-6_provide-validation-feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.259259" vertical-offset="173" max-vertical-offset="1260">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self/directive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44283646" vertical-offset="0" max-vertical-offset="1008">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47901592" vertical-offset="389" max-vertical-offset="1080">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-7_feedback-with-specific-constraints.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59479016" vertical-offset="75" max-vertical-offset="1332">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-9_consolidating-validation-feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30680174" vertical-offset="410" max-vertical-offset="1206">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-10_defering-validation-feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5991317" vertical-offset="0" max-vertical-offset="1206">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
