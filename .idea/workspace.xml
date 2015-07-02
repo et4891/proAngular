@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="form-12-10_defering-validation-feedback.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-10_defering-validation-feedback.html">
+      <file leaf-file-name="form-12-15_ng-option-for-select.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-15_ng-option-for-select.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5991317" vertical-offset="0" max-vertical-offset="1206">
-              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.760181" vertical-offset="0" max-vertical-offset="684">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -56,13 +56,16 @@
         <option value="$PROJECT_DIR$/AnuglarChapter11/1.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-1_initial.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-3_implicitly_create_model_properties.html" />
-        <option value="$PROJECT_DIR$/self/directive.html" />
-        <option value="$PROJECT_DIR$/AngularChapter12/form-12-5_basic-form-validation.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-6_provide-validation-feedback.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-7_feedback-with-specific-constraints.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-9_consolidating-validation-feedback.html" />
         <option value="$PROJECT_DIR$/AngularChapter12/form-12-10_deffering-validation-feedback.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-5_basic-form-validation.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-13_additional-attr-for-checkbox.html" />
+        <option value="$PROJECT_DIR$/self/directive.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-12_attributes-for-input-elements.html" />
+        <option value="$PROJECT_DIR$/AngularChapter12/form-12-15_ng-option-for-select.html" />
       </list>
     </option>
   </component>
@@ -132,20 +135,6 @@
               <option name="myItemId" value="ProAngular" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="self" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProAngular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProAngular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -168,7 +157,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -186,28 +175,28 @@
       <recent name="D:\PhpstormProjects\ProAngular\AnuglarChapter11" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.form-12-9_consolidating-validation-feedback.html">
-    <configuration default="false" name="form-12-6_provide-validation-feedback.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-6_provide-validation-feedback.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="form-12-7_feedback-with-specific-constraints.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-7_feedback-with-specific-constraints.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="form-12-8_validation-variables-control-element-visibility.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.form-12-15_ng-option-for-select.html">
     <configuration default="false" name="form-12-9_consolidating-validation-feedback.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-9_consolidating-validation-feedback.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="form-12-10_defering-validation-feedback.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-10_defering-validation-feedback.html">
+    <configuration default="false" name="form-12-12_attributes-for-input-elements.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-12_attributes-for-input-elements.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="form-12-13_additional-attr-for-checkbox.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-13_additional-attr-for-checkbox.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="form-12-5_basic-form-validation.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-5_basic-form-validation.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="form-12-15_ng-option-for-select.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ProAngular/AngularChapter12/form-12-15_ng-option-for-select.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -239,19 +228,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form-12-6_provide-validation-feedback.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form-12-7_feedback-with-specific-constraints.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.form-12-8_validation-variables-control-element-visibility.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form-12-9_consolidating-validation-feedback.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form-12-10_defering-validation-feedback.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form-12-9_consolidating-validation-feedback.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form-12-12_attributes-for-input-elements.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.form-12-13_additional-attr-for-checkbox.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form-12-5_basic-form-validation.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form-12-15_ng-option-for-select.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form-12-9_consolidating-validation-feedback.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form-12-10_defering-validation-feedback.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.form-12-8_validation-variables-control-element-visibility.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form-12-7_feedback-with-specific-constraints.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form-12-6_provide-validation-feedback.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form-12-15_ng-option-for-select.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form-12-5_basic-form-validation.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.form-12-13_additional-attr-for-checkbox.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form-12-12_attributes-for-input-elements.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form-12-9_consolidating-validation-feedback.html" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +268,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22891566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18562232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22961374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -317,11 +306,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-13_additional-attr-for-checkbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="648">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-12_attributes-for-input-elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-13_additional-attr-for-checkbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="648">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-12_attributes-for-input-elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-11_defering-validation-feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1206">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-11_defering-validation-feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1608">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -472,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-5_basic-form-validation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5079595" vertical-offset="9" max-vertical-offset="1242">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-6_provide-validation-feedback.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.259259" vertical-offset="173" max-vertical-offset="1260">
@@ -486,41 +513,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/self/directive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44283646" vertical-offset="0" max-vertical-offset="1008">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47901592" vertical-offset="389" max-vertical-offset="1080">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-7_feedback-with-specific-constraints.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59479016" vertical-offset="75" max-vertical-offset="1332">
           <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-9_consolidating-validation-feedback.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.30680174" vertical-offset="410" max-vertical-offset="1206">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.6851852" vertical-offset="92" max-vertical-offset="1206">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-8_validation-variables-control-element-visibility.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8333333" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-11_defering-validation-feedback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51519537" vertical-offset="40" max-vertical-offset="1206">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-5_basic-form-validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6953846" vertical-offset="178" max-vertical-offset="1242">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/self/directive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83384615" vertical-offset="16" max-vertical-offset="1008">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-12_attributes-for-input-elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.333333" vertical-offset="63" max-vertical-offset="1710">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-10_defering-validation-feedback.html">
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-13_additional-attr-for-checkbox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5991317" vertical-offset="0" max-vertical-offset="1206">
-          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+        <state vertical-scroll-proportion="-19.333334" vertical-offset="0" max-vertical-offset="648">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularChapter12/form-12-15_ng-option-for-select.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.760181" vertical-offset="0" max-vertical-offset="684">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
           <folding />
         </state>
       </provider>
