@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Controllers</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet"/>
+    <link href="bootstrap-theme.css" rel="stylesheet"/>
+    <script>
+        angular.module("exampleApp", [])
+                .controller("simpleCtrl", function($scope){
+                    //setup controller's scope by defining a city property which is assigned a string value
+                    $scope.city = "London";
+
+                    //define the getCountry behavior simply takes a city and return the country that can be found
+                    $scope.getCountry = function(city){
+                        switch(city){
+                            case "London":
+                                return "UK";
+                            case "New York":
+                                return "USA";
+                        }
+                    }
+                });
+    </script>
+</head>
+<body>
+    <div class="well" ng-controller="simpleCtrl">
+        <p>The City is: {{city}}</p>
+        <!--the getCountry behavior receives a city argument which is then processed to generate the associated country
+            the argument received is from the $scope.city-->
+        <p>The Country is: {{getCountry(city) || "unknown"}}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Controllers</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet"/>
+    <link href="bootstrap-theme.css" rel="stylesheet"/>
+    <script>
+        angular.module("exampleApp", [])
+                .controller("simpleCtrl", function($scope){
+                    //addresses object used to gather the ZIP codes
+                    $scope.addresses = {};
+
+                    //prints out and save one of the ZIP code values
+                    $scope.setAddress = function (type, zip) {
+                        console.log("Type: " + type + " " + zip);
+                        $scope.addresses[type] = zip;
+                    };
+
+                    //copies one implicitly defined ZIP code behavior to another
+                    //copies shippingZip to billingZip
+                    $scope.copyAddress = function () {
+                        $scope.shippingZip = $scope.billingZip;
+                    };
+                });
+    </script>
+</head>
+<body ng-controller="simpleCtrl">
+
+    <div class="well">
+        <h4>Billing Zip Code</h4>
+        <div class="form-group">
+            <!--enter zip here directly which can then be copied to the shipping zip below by pressing Use Bill
+                billingZip here indicates $scope.billingZip-->
+            <input ng-model="billingZip" class="form-control">
+        </div>
+        <!--Button to print and can also save (more codes needed) the billing zip-->
+        <button class="btn btn-primary" ng-click="setAddress('billingZip', billingZip)">
+            Save Billing
+        </button>
+    </div>
+
+    <div class="well">
+        <h4>Shipping Zip Code</h4>
+        <div class="form-group">
+            <!--This can be either entered manually or by pressing Use Bill and this input will copy the input zip from billingZip
+                shippingZip here indicates $scope.shippingZip-->
+            <input ng-model="shippingZip" class="form-control">
+        </div>
+        <button class="btn btn-primary" ng-click="copyAddress()">
+            Use Bill
+        </button>
+        <!--This prints the zip again this time it'll print shippingZip instead of billing Zip-->
+        <button class="btn btn-primary" ng-click="setAddress('shippingZip', shippingZip)">
+            Save Shipping
+        </button>
+    </div>
+
+</body>
+</html>

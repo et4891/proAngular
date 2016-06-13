@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Controllers</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet"/>
+    <link href="bootstrap-theme.css" rel="stylesheet"/>
+    <script>
+        angular.module("exampleApp", [])
+                .controller("simpleCtrl", function($scope){
+                    // used array for city names and using ng-options to generate to be able to select
+                    $scope.cities = ["London", "New York", "Paris"];
+                    // setting the default of city select
+                    $scope.city = "London";
+
+                    $scope.getCountry = function(city){
+                        switch(city){
+                            case "London":
+                                return "UK";
+                            case "New York":
+                                return "USA";
+                        }
+                    }
+                });
+    </script>
+</head>
+<body ng-controller="simpleCtrl">
+    <div class="well">
+        <label for="">Select a City:</label>
+        <!--Using ng-options to output the array of cities and when selected the data will be binded-->
+        <select ng-options="city for city in cities" ng-model="city" title="Select City"></select>
+    </div>
+
+    <div class="well">
+        <!--because of the data binding above, when the data value changes this changes too-->
+        <p>The City is: {{city}}</p>
+        <p>The Country is: {{getCountry(city) || "Unknown"}}</p>
+    </div>
+</body>
+</html>
