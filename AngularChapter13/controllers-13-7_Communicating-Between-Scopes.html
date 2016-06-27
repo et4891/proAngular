@@ -23,7 +23,9 @@
                         console.log("Type: " + type + " " + zip);
                     };
 
-                    //$broadcast() is called on the root scope, wich sends a zipCodeUpdated event down through the scope hierarchy
+                    //If Save Billing button isn't clicked then this function would not work
+                    //This is because when setAddress() is called, $broadcast() is called to pass down scopes
+                    //$broadcast() is called on the root scope, which sends a zipCodeUpdated event down through the scope hierarchy
                     $scope.copyAddress = function () {
                         $scope.zip = $scope.billingZip;
                     };
