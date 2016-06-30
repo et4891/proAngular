@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Controllers</title>
+    <script src="../angular.js"></script>
+    <script src="controllers.js"></script>
+    <link href="../bootstrap.css" rel="stylesheet"/>
+    <link href="../bootstrap-theme.css" rel="stylesheet"/>
+</head>
+<body ng-controller="topLevelCtrl">
+
+    <!--Top Level Controller-->
+    <div class="well">
+        <h4>Top Level Controller</h4>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="reverseText()">
+                    Reverse
+                </button>
+                <button class="btn btn-default" type="button" ng-click="changeCase()">
+                    Case
+                </button>
+            </span>
+            <input type="text" class="form-control" ng-model="dataValue">
+        </div>
+    </div>
+
+    <!--First Child Controller-->
+    <div class="well" ng-controller="firstChildCtrl">
+        <h4>First Child Controller</h4>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="reverseText()">
+                    Reverse
+                </button>
+                <!--changeCase() here has its own behavior, which overrides the top level controller's changeCase() behavior but still able to use the dataValue created by top level controller-->
+                <button class="btn btn-default" type="button" ng-click="changeCase()">
+                    Case
+                </button>
+            </span>
+            <input type="text" class="form-control" ng-model="dataValue">
+        </div>
+    </div>
+    <!--End First Child Controller-->
+
+    <!--Second Child Controller-->
+    <div class="well" ng-controller="secondChildCtrl">
+        <h4>Second Child Controller</h4>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button" ng-click="reverseText()">
+                    Reverse
+                </button>
+                <button class="btn btn-default" type="button" ng-click="changeCase()">
+                    Case
+                </button>
+                <button class="btn btn-default" type="button" ng-click="shiftFour()">
+                    Shift
+                </button>
+            </span>
+            <input type="text" class="form-control" ng-model="dataValue">
+        </div>
+    </div>
+    <!--End Second Child Controller-->
+
+</body> <!--End Top Level Controller-->
+</html>
