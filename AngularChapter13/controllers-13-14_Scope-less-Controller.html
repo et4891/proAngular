@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+    <title>Controllers</title>
+    <script src="angular.js"></script>
+    <link href="bootstrap.css" rel="stylesheet"/>
+    <link href="bootstrap-theme.css" rel="stylesheet"/>
+    <script>
+        var app = angular.module("exampleApp", []);
+
+        //$scope dependency is not declared and this controller defines its data values and behaviors usig the JS *this* keyboard
+        app.controller("simpleCtrl", function () {
+            this.dataValue = "Hello, Adam";
+
+            this.reverseText = function () {
+                this.dataValue = this.dataValue.split("").reverse().join("");
+            }
+        })
+    </script>
+</head>
+<body>
+
+    <!--When applying a scope-less controller, the expression used for the ng-controller directive takes a different form, specifying the name of a variable by which the controller will be accessible in the view-->
+    <!--format of this expression is <controller to apply> as <variable name>-->
+    <!--in this example "simpleCtrl as ctrl" -->
+    <div class="well" ng-controller="simpleCtrl as ctrl">
+        <h4>Scope-less Controller</h4>
+        <div class="input-group">
+            <span class="input-group-btn">
+                <!--the controller creates a variable called ctrl which is used to access the data and behaviors in the view as below-->
+                <button class="btn btn-default" type="button" ng-click="ctrl.reverseText()">
+                    Reverse
+                </button>
+            </span>
+            <input type="text" class="form-control" ng-model="ctrl.dataValue">
+        </div>
+    </div>
+
+</body>
+</html>
